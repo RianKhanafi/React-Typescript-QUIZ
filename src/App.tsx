@@ -79,6 +79,7 @@ const App = () => {
     }
   };
 
+
   return (
     <>
       <GlobalStyle />
@@ -92,6 +93,9 @@ const App = () => {
 
         {!gameOver ? <p className="score">Score: {score}</p> : null}
         {loading ? <p>Loading Questions...</p> : null}
+
+
+        {/* questions[index]?. .... */}
         {!loading && !gameOver && (
           <QuestionCard
             questionNr={number + 1}
